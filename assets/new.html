@@ -9,38 +9,64 @@
 <div id="header"><h1><img name="ljmuheader" src="../images/Header.jpeg" width="800" height="100" alt="LJMU Holiday Booking System" title="LJMU Holiday Booking System"></h1>
 </div>
 <div id="main">
-  <h1>Add a New Record</h1>
+  <h1>Add a New Request</h1>
 <p>Please use the following form to submit a holiday request. Please see the label for the naming conventions to be used.</p>
 <form name="form1" method="post" action="">
+  <table width="447" border="1" align="center">
+    <tr>
+      <th width="148" scope="col"><label for ="name">Name (BloggsJ)</label></th>
+      <th width="283" scope="col"><input name="name" type="text" id="name" size="25" accesskey="n"></th>
+    </tr>
+    <tr>
+      <td height="53"><b>
+        <label for ="dleaving"> Date Leaving(DD/MM/YY)</label>
+      </b></td>
+      <td><input name="dleaving" type="text" id="dleaving" size="7" accesskey="l"></td>
+    </tr>
+    <tr>
+      <td><b>
+        <label for ="dreturning"> Date Returning</label>
+      </b></td>
+      <td><input name="dreturning" type="text" id="dreturning" size="7" maxlength="8" accesskey="r"></td>
+    </tr>
+    <tr>
+      <td><b>
+        <label for ="dsubmitted"> Date Submitted</label>
+      </b></td>
+      <td><input name="dsubmitted" type="text" id="dsubmitted" size="7" maxlength="8" accesskey="x"></td>
+    </tr>
+    <tr>
+      <td><b>
+        <label for ="dapproved"> Date Approved/Rejected</label>
+      </b></td>
+      <td><input name="dapproved" type="text" id="dapproved" size="7" maxlength="8" accesskey="t"></td>
+    </tr>
+    <tr>
+      <td><b>
+        <label for ="comments"> Comments</label>
+      </b></td>
+      <td><label for="comments"></label>
+        <textarea name="comments" id="comments" cols="45" rows="2" accesskey="c"></textarea></td>
+    </tr>
+    <tr>
+      <td><b>
+        <label for ="app"> Approved?</label>
+      </b></td>
+      <td><p>
+        <label for="app"></label>
+        <select name="app" id="app">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </p></td>
+    </tr>
+  </table>
   <p>
-    <label for="name2">Name (E.G BloggsJ)</label>
-    <input type="text" name="name" id="name2" accesskey="n">
+    <label for ="sub2">Submit Amended Request</label>
+    <input type="submit" name="sub2" id="sub2" value="Submit" accesskey="s">
   </p>
   <p>
-    <label for="datel">Date Leaving (dd/mm/yy)</label>
-    <input type="text" name="datel" id="datel" accesskey="l">
-  </p>
-  <p>
-    <label for="dater">Date Returning</label>
-    <input type="text" name="dater" id="dater" accesskey="r">
-  </p>
-  <p>
-    <label for="dates">Date Submitted </label>
-    <input type="text" name="dates" id="dates" accesskey="x">
-  </p>
-  <p>
-    <label for="datea">Date Approved/Rejected</label>
-    <input type="text" name="datea" id="datea" accesskey="a">
-  </p>
-  <p>
-    <label for="bool">Approved?</label>
-    <select name="bool" id="bool">
-      <option>Yes</option>
-      <option>No</option>
-    </select>
-  </p>
-  <p>
-    <input type="submit" name="sub" id="sub" value="Submit" accesskey="s">
+    <label for ="res">Reset Amended Request</label>
     <input type="reset" name="res" id="res" value="Reset" accesskey="z">
   </p>
 </form>

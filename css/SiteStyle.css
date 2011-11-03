@@ -8,7 +8,7 @@ body {
 }
 
 #header {
-background:#ddd;
+	background:#ddd;
 }
 
 #main {
@@ -20,7 +20,10 @@ background:#ddd;
 }
 
 table {
-	font-size: 12px;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: left;
+		
 }
 
 #navbar {
@@ -33,8 +36,8 @@ table {
 }
 
 #footer {
-clear:both;
-background:#D0DC66;
+	clear:both;
+	background:#D0DC66;
 }
 
 a:link {
@@ -49,8 +52,11 @@ a:visited {
 
 a:hover {
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #FFF;
 	font-weight:bold;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 18px;
+}
+table {
+	font-weight: normal;
 }

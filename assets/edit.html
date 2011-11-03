@@ -9,53 +9,56 @@
 <div id="header"><h1><img name="ljmuheader" src="../images/Header.jpeg" width="800" height="100" alt="LJMU Holiday Booking System" title="LJMU Holiday Booking System"></h1>
 </div>
 <div id="main">
-  <h1>Edit a Request</h1>
-<p>Please enter the staff name and date submitted (E.G BloggsJ) to find the record and edit it</p>
-<form name="form1" method="post" action="">
-  <p>
-    <label for="name">Name</label>
-    <input name="name" type="text" id="name" accesskey="n" value="BloggsJ">
-  </p>
-  <p>
-    <label for="date"> Date Leaving</label>
-    <input name="date" type="text" id="date" accesskey="l" value="15/10/11" >
-  </p>
-  <p>
-  	<label for="sub"> Submit Search Request</label>
-    <input type="submit" name="sub" id="sub" value="Submit" accesskey="s">
-  </p>
-</form>
-<p>&nbsp;</p>
-<form name="form2" method="post" action="">
-<h2>Request to Edit</h2>
-  <table width="491" border="1" align="center">
-    <tr>
-      <th width="60" height="53" scope="col"><p>Name</p></th>
-      <th width="48" scope="col">Date Leaving</th>
-      <th width="62" scope="col">Date Returning</th>
-      <th width="65" scope="col">Date Submitted</th>
-      <th width="121" scope="col">Date Approved/Rejected</th>
-      <th width="95" scope="col">Approved</th>
-    </tr>
-    <tr>
-      <td><label for="name2"></label>
-        <input name="name2" type="text" id="name2" value="BloggsJ" size="10" accesskey="q"></td>
-      <td><label for="name3"></label>
-        <input name="name3" type="text" id="name3" value="15/10/11" size="7" accesskey="w"></td>
-      <td><label for="name4"></label>
-        <input name="name4" type="text" id="name4" value="20/11/11" size="7" maxlength="8" accesskey="x"></td>
-      <td><label for="name5"></label>
-        <input name="name5" type="text" id="name5" value="15/09/11" size="7" maxlength="8" accesskey="r"></td>
-      <td><label for="name6"></label>
-        <input name="name6" type="text" id="name6" value="16/09/2011" size="7" maxlength="8" accesskey="t"></td>
-      <td><label for="name7"></label>
-        <input name="name7" type="text" id="name7" value="Yes" size="2" maxlength="3" accesskey="y"></td>
-    </tr>
-  </table>
-  <p>
-  <label for ="sub2">Submit Amended Request</label>
-    <input type="submit" name="sub2" id="sub2" value="Submit" accesskey="m">
-    </p>
+  <form name="form2" method="post" action="">
+  <h1>Request to Edit</h1>
+  <p>This is the request you submitted for editing. Plese adhere to the naming conventions specified otherwise your request will not be considered.</p>
+<table width="447" border="1" align="center">
+  <tr>
+    <th width="148" scope="col"><label for ="name">Name (BloggsJ)</label></th>
+    <th width="283" scope="col"><input name="name" type="text" id="name" value="BloggsJ" size="25" accesskey="n"></th>
+  </tr>
+  <tr>
+    <td height="53"><b><label for ="dleaving">
+      Date Leaving(DD/MM/YY)</label></b></td>
+    <td><input name="dleaving" type="text" id="dleaving" value="15/10/11" size="7" accesskey="l"></td>
+  </tr>
+  <tr>
+    <td><b><label for ="dreturning">
+      Date Returning</label></b></td>
+    <td><input name="dreturning" type="text" id="dreturning" value="20/11/11" size="7" maxlength="8" accesskey="r"></td>
+  </tr>
+  <tr>
+    <td><b><label for ="dsubmitted">
+      Date Submitted</label></b></td>
+    <td><input name="dsubmitted" type="text" id="dsubmitted" value="15/09/11" size="7" maxlength="8" accesskey="x"></td>
+  </tr>
+  <tr>
+    <td><b><label for ="dapproved">
+      Date Approved/Rejected</label></b></td>
+    <td><input name="dapproved" type="text" id="dapproved" value="16/09/2011" size="7" maxlength="8" accesskey="t"></td>
+  </tr>
+  <tr>
+    <td><b><label for ="comments">
+      Comments</label></b></td>
+    <td><label for="comments"></label>
+      <textarea name="comments" id="comments" cols="45" rows="2" accesskey="c"></textarea></td>
+  </tr>
+  <tr>
+    <td><b><label for ="app">
+      Approved?</label></b></td>
+    <td><p>
+      <label for="app"></label>
+      <select name="app" id="app">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </p></td>
+  </tr>
+</table>
+<p>
+  <label for ="sub1">Submit Amended Request</label>
+    <input type="submit" name="sub1" id="sub1" value="Submit" accesskey="s">
+</p>
   <p>
   <label for ="res">Reset Amended Request</label>
     <input type="reset" name="res" id="res" value="Reset" accesskey="z">
